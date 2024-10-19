@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    width: 100%;
+    height: 500px;
+    background: url('https://wallpapers.com/images/hd/720p-food-background-tkg0whta45mafig0.jpg');
+    background-size: cover;  /* to remove duplication of image*/
+    background-attachment: fixed;
+}

@@ -1,0 +1,22 @@
+.grp{
+    width: 300px;
+    height: 400px;
+    border: solid 2px grey;
+    padding: 30px;
+    border-radius: 10px;
+    float: left;      /*to align items in single line*/
+    margin: 20px 50px;  /*to get gap between div*/
+}
+
+
+img{
+    width: 100%;   /*parent class nte 100% width set avum.here parent class is div*/
+    height: 200px;
+    
+}
+
+/*************** get button in center. button is a inline element, so first convert inline element into block element
+ by using div and give an id for that div**************/
+#btn{
+    text-align: center;
+}

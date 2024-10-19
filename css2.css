@@ -1,0 +1,60 @@
+/*universal selectors*/
+
+*{                                       /*to give same property for entire screen*/
+    text-align: center;                  
+}
+
+
+/*id selectors*/
+
+#head1{
+    color: brown;
+}
+
+
+
+    /* class selectors*/
+
+.head2{
+    color: cyan;
+    background-color: bisque;
+}
+#head3{
+    color: blue;
+}
+
+/**********************************css combinators **********************/
+
+/*grouping selectors*/
+
+h3,h4,#head5{
+    color: crimson;
+    text-align: left;
+    font-size: 30px;
+}
+
+
+/*decendant selectors*/
+
+
+div p{
+    color: chartreuse;
+    text-align: start;
+}
+
+/*child selectors*/
+
+div>h1{
+    color: crimson;
+}
+
+/*sibling selectors*/
+div~p{
+    color: gray;
+}
+
+/*immediate selectors*/
+div+h1{
+    background-color: gray;
+}
+

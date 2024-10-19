@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+div{
+    width: 100%;
+    border: solid;
+    height: 100vh;
+
+    /********to get item in the center of screen ***********/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

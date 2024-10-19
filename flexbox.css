@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.child{
+    width: 350px;
+    height: 500px;
+    border: solid grey;
+    
+}
+
+img{
+    width: 100%;
+    height: 300px;
+}
+
+/********flex property is always apply in parent class *************/
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+    /********to get box in center of parent class. so give a border and height. Then align-items:center; *************/
+
+    height: 700px;
+    border: solid;
+    align-items: center;           /*****to aligm items center. It works only when display is flex ******/
+
+    flex-wrap: wrap;      /********* to get correct alignment ,when you reduce the screen size. *************/
+}

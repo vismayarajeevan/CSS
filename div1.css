@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    width: 400px;
+    height: 250px;
+    background-color: chocolate;
+    border: solid;
+
+}
+
+#d2{
+    margin-left: 500px;
+    margin-top: -255px;
+}

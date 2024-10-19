@@ -1,0 +1,19 @@
+*{
+    margin: 0px;   /****to get full width****/
+}
+
+h1{
+    border: solid;
+    margin: 50px;
+    padding: 30px;
+}
+h3{
+    border: solid;
+    margin: 40px 100px 10px 100px;
+    padding: 10px 20px;
+}
+a{
+    border: solid;
+    margin-left: 100px;
+    margin-top: 60px;         /****inline elements not applicable for top and bottom. It is only applicable for left and right.****/
+}

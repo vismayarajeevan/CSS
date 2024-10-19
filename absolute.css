@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+}
+
+.parent{
+    position: relative;                    /******if you are giving position:absolute for child class, then you must give position:relative for parent class to get proper alignment***********/
+}
+.child{
+    width: 300px;
+    border: 2px solid;
+    background-color: bisque;
+    position: absolute;                   /**********to overlap the contents***********/
+    top: 0;                             /*****to get same value for all browser**********/
+
+}
+.img1{
+    width: 100%;
+}
+
+#head1{
+    z-index: 1;
+    margin-left: 350px;  /****to get image in right side*********/
+}
+
+/****************
+position:sticky
+*************/
+
+#top{
+    background-color: blue;
+    position: sticky;                 /******if you are only giving this ,it doesn't work.you must give a value.************/
+    top: 5px;                         /********it becomes stick at the screen after 5px from the top when this paragraph reach. ******/
+} 

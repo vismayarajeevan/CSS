@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 10%;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);         /*to set visibility of content under navbar, when we scroll the screen****/
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+}
+
+#checkbox{
+    display: none;   /*to disable the icon*/
+}
+
+
+/* icons */
+.icons{
+    font-size: 2.5rem;
+    color: brown;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+/* navbar */
+.navbar a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: brown;
+    font-weight: 600;
+    margin: 0px 3rem; 
+
+}
+
+
+
+
+
+/* main content */
+.content{
+    padding-top: 100px;
+}
+h1{
+    color: brown;
+}
+p{
+    font-size: 1.25rem;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+/* row/column */
+.container{
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+.item{
+    width: 450px;
+    height: 400px;
+    border: solid 1px;
+    margin: 10px;
+}
+.group1{
+    width: 100%;
+}
+/* media querry */
+
+
+/*********** for header */
+ /* for large screen */
+
+@media (max-width:992px){
+    #header{
+        padding: 1.3rem 5%;
+    }
+}
+
+
+/* for maincontent */
+/* for medium screen */
+
+@media (max-width:760px) {               /* upto medium screen*/
+
+    .icons{
+        display: flex;    /*to display icons*/
+    }
+    #crossIcon{
+        display: none;
+    }
+
+    /* for display cross icon when menyuicon is pressed */
+    #checkbox:checked~.icons #menuIcon{
+        display: none;
+    }
+    #checkbox:checked~.icons #crossIcon{
+        display: block;             /*to display an item we can use flex or block*/
+    }
+    
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(54, 42, 42);
+        display: none; 
+    }
+    .navbar a{
+        display: block;        /* to get contents in line by line*/
+        text-align: center;
+        margin: 1.5rem 0px;
+    }
+
+    /* to display navbar contents when menuicon is click  */
+    #checkbox:checked~.navbar{
+        display: block;
+    }
+    h1{
+        color: grey;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 2;
+        color: brown;
+    }
+    .container{
+        flex-wrap: wrap;        /**** ***to get corrent alignment for boxes when screen size is reduced*********/
+    }
+}

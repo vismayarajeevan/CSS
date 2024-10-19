@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+}
+header{
+    background-color: grey;
+    padding: 10px;
+    position: fixed;   /*to make header tag fixed*/
+    width: 100%;
+}
+
+span{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#para1{
+    padding-top: 170px;
+}
+
+
+#para2{
+    padding-top: 50px;
+}
+
+.grp{
+    width: 300px;
+    height: 400px;
+    border: solid 2px grey;
+    padding: 30px;
+    border-radius: 10px;
+    float: left;      /*to align items in single line*/
+    margin: 20px 50px;  /*to get gap between div*/
+}
+
+
+
+#btn{
+    text-align: center;
+}

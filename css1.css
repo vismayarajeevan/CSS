@@ -1,0 +1,7 @@
+p{
+    color: red;
+    background-color: black;
+    line-height: 2;  /*to give space between lines in paragraph*/
+    font-weight: 800;  /*500 above are bolds*/
+    font-family: Arial, Helvetica, sans-serif;
+}
